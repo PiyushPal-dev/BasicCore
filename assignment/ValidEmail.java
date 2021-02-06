@@ -1,3 +1,4 @@
+//Program to read valid Email from .txt file ny String Tokenizer
 package assignment;
 
 import java.io.BufferedReader;
