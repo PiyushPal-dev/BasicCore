@@ -1,3 +1,4 @@
+// Program to read valid email from a .txt file
 package assignment;
 
 import java.io.BufferedReader;
