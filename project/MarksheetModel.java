@@ -6,7 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class MarksheetModel {
-	
+// To Insert Data	
  public void add(MarksheetBean bean) throws Exception {
 	Class.forName("com.mysql.cj.jdbc.Driver");
 	Connection conn= DriverManager.getConnection("jdbc:mysql://localhost/Rays","root","root");
@@ -26,7 +26,7 @@ public class MarksheetModel {
 	conn.close();
  }
  
-
+// To Update Data
 public void update(MarksheetBean bean) throws Exception {
 	 Class.forName("com.mysql.cj.jdbc.Driver");
 	 Connection conn= DriverManager.getConnection("jdbc:mysql://localhost/Rays","root","root");
@@ -41,7 +41,7 @@ public void update(MarksheetBean bean) throws Exception {
 	 conn.close();
 	
 }
-
+// For Deletion
 public void delete(MarksheetBean bean) throws Exception {
 	 Class.forName("com.mysql.cj.jdbc.Driver");
 	 Connection conn= DriverManager.getConnection("jdbc:mysql://localhost/Rays","root","root");
@@ -54,7 +54,7 @@ public void delete(MarksheetBean bean) throws Exception {
 	 ps.close();
 	 conn.close();
 }
-
+// To get Data by RollNo.
 public void Get(MarksheetBean bean) throws Exception {
 	 Class.forName("com.mysql.cj.jdbc.Driver");
 	 Connection conn= DriverManager.getConnection("jdbc:mysql://localhost/Rays","root","root");
@@ -76,7 +76,7 @@ public void Get(MarksheetBean bean) throws Exception {
 	 ps.close();
 	 conn.close();
 }
-
+// To get Merit List
 public void Meritlist(MarksheetBean bean) throws Exception {
 	 Class.forName("com.mysql.cj.jdbc.Driver");
 	 Connection conn= DriverManager.getConnection("jdbc:mysql://localhost/Rays","root","root");
