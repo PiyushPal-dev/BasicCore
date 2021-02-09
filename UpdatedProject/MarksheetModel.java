@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 public class MarksheetModel {
-	
+// To Insert Data	
  public void add(MarksheetBean bean) throws Exception {
 	 ResourceBundle rb = ResourceBundle.getBundle("in.com.project.Resouce");
 	Class.forName(rb.getString("driver"));
@@ -28,7 +28,7 @@ public class MarksheetModel {
 	conn.close();
  }
  
-
+// To Update Data
 public void update(MarksheetBean bean) throws Exception {
 	 ResourceBundle rb = ResourceBundle.getBundle("in.com.project.Resouce");
 	 Class.forName(rb.getString("driver"));
@@ -49,7 +49,7 @@ public void update(MarksheetBean bean) throws Exception {
 	 conn.close();
 	
 }
-
+// To Delete Data
 public void delete(MarksheetBean bean) throws Exception {
 	 ResourceBundle rb = ResourceBundle.getBundle("in.com.project.Resouce");
 	 Class.forName(rb.getString("driver"));
@@ -63,7 +63,7 @@ public void delete(MarksheetBean bean) throws Exception {
 	 ps.close();
 	 conn.close();
 }
-
+// Get a specific record by RollNo.
 public void Get(MarksheetBean bean) throws Exception {
 	 ResourceBundle rb = ResourceBundle.getBundle("in.com.project.Resouce");
 	 Class.forName(rb.getString("driver"));
@@ -84,7 +84,7 @@ public void Get(MarksheetBean bean) throws Exception {
 	 ps.close();
 	 conn.close();
 }
-
+// Get Merit List
 public void Meritlist(MarksheetBean bean) throws Exception {
 	 ResourceBundle rb = ResourceBundle.getBundle("in.com.project.Resouce");
 	 Class.forName(rb.getString("driver"));
@@ -105,7 +105,7 @@ public void Meritlist(MarksheetBean bean) throws Exception {
 	 ps.close();
 	 conn.close();
 }
-
+// Get all Records
 public void Search(MarksheetBean bean) throws Exception {
 	 ResourceBundle rb = ResourceBundle.getBundle("in.com.project.Resouce");
 	 Class.forName(rb.getString("driver"));
